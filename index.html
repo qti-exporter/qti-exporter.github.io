@@ -55,6 +55,7 @@
         const isInvalidInput = !userInput || !userInputMatchArr || !userInputSplitArr || userInputMatchArr.length != userInputSplitArr.length
 
         if (isInvalidInput) {
+          $('.alert').hide()
           $('.alert').delay(300).fadeToggle()
           return false
         }
